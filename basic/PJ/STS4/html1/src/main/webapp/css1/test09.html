@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+	a, button { font-size: 11pt; }
+	.btn { 
+		padding: 0.5em 1.5em; 
+		border: 1px solid gray;
+		border-radius: 0.5em;
+		background: linear-gradient(#fff, #ddd); 
+		text-decoration: none;
+		color: black;
+		display: inline-block; }
+       
+	.btn:active {
+	   	-ms-transform: translateY(2px);
+	    -webkit-transform: translateY(2px);
+	    transform: translateY(2px);
+	    background: #ccc; }
+
+</style>
+<script>
+  function goDaum() {
+    location.href = "http://www.daum.net";
+  }
+</script>
+</head>
+<body>
+   <a class="btn" href="http://www.naver.com">네이버</a>
+   <button class="btn" type="button" onclick="goDaum()">다음</button>
+</body>
+</html>

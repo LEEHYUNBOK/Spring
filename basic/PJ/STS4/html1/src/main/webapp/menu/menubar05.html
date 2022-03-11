@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    div.container {
+      width: 900px;
+      margin: 0 auto;
+    }
+    ul.menubar {
+      border: 1px solid #ddd;
+      border-radius: 0.4em;
+      background: linear-gradient(#fff, #eee);
+      padding: 0.3em 5em;
+      font-size: 11pt;
+    }
+    ul.menubar li {
+      display: inline-block;
+      list-style-type: none;
+      min-width: 6em;
+      text-align: center;
+      padding: 0.2em;
+    }
+    ul.menubar li:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+    ul.menubar ul {
+      position: absolute;
+      visibility: hidden;
+      margin-top: 2px;
+      margin-left: 30px;
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 0;
+      box-shadow: 4px 4px 4px #eee;
+      min-width: 120px;
+    }
+    ul.menubar li:hover ul {
+      visibility: visible;
+    }
+    ul.menubar ul:hover {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="menubar">
+      <li>메뉴1</li>
+      <li>메뉴2</li>
+      <li>
+        메뉴3
+        <ul>
+          <li>메뉴3-1</li>
+          <li>메뉴3-2</li>
+          <li>메뉴3-3</li>
+        </ul>      
+      <li>로그아웃</li>
+    </ul>
+  </div>
+</body>
+</html>
+
